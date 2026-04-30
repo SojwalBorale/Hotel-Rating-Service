@@ -1,0 +1,104 @@
+/* Container */
+.user-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.user-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.user-container h2 {
+  margin-top: 30px;
+  color: #34495e;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* User List */
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.user-list li {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.user-list li strong {
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.user-list button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.user-list button:hover {
+  background: #0056b3;
+}
+
+/* Form */
+.user-form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.user-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.user-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.user-form button {
+  grid-column: span 2;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.user-form button:hover {
+  background: #218838;
+}

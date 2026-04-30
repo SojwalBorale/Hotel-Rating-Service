@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/ratings")
+@CrossOrigin(origins = "http://localhost:3000")
 public class RatingController {
 
     @Autowired
@@ -19,6 +20,9 @@ public class RatingController {
     // create
     @PostMapping
     public ResponseEntity<Rating> create(@RequestBody Rating rating){
+        if (rating.getRating() < 0 || rating.getRating() > 10) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        }
         return  ResponseEntity.status(HttpStatus.CREATED).body(ratingservice.create(rating));
     }
 
