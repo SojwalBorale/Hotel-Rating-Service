@@ -36,20 +36,20 @@ It is designed to showcase backend development skills including REST APIs, servi
 
 
 ## explaination and questions
-Deep Explanation
-Built as a microservices architecture:
-UserService → manages users.
-HotelService → manages hotels.
-RatingService → manages ratings.
-Each service has its own database (MongoDB/MySQL).
-Services communicate via REST APIs (using RestTemplate/WebClient).
-When fetching a user → system aggregates ratings + hotel details → returns a rich JSON response.
+- Deep Explanation
+- Built as a microservices architecture:
+- UserService → manages users.
+- HotelService → manages hotels.
+- RatingService → manages ratings.
+- Each service has its own database (MongoDB/MySQL).
+- Services communicate via REST APIs (using RestTemplate/WebClient).
+- When fetching a user → system aggregates ratings + hotel details → returns a rich JSON response.
 
  ## Interview Questions (Hotel-Rating-Service)
-Explain microservices.
-Why separate services instead of monolith?.
-How do services communicate?.
-How did you configure MongoDB in Spring Boot?.
-What challenges did you face with database collections?.
-How do you handle aggregation of data across services?.
-What best practices did you follow in repo hygiene?.
+- Explain microservices.
+- Why separate services instead of monolith?.
+- How do services communicate?.
+- How did you configure MongoDB in Spring Boot?.
+- What challenges did you face with database collections?.
+- How do you handle aggregation of data across services?.
+- What best practices did you follow in repo hygiene?.
